@@ -1,0 +1,22 @@
+---
+title: "Autoencoder-based pathological voice classification"
+author: "Li-Chin Chen and Yi-Heng Lin and Wen-Hsuan Tseng and Ching-Ting Tan and Yu Tsao"
+output: html_document
+date: '2023-06-09'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Classification based on Cape-V score
+The classification is based on a three-class classification (< 10, 10-35, >35). 
+
+|       |severity|breathiness|pitch|loudness|roughness|strain|
+|-------|--------|-----------|-----|--------|---------|------|
+| AUROC | 0.979|0.963|0.964|0.955|0.974|0.967|
+| Accuracy|0.905|0.877|0.867|0.851|0.868|0.885|
+| Sensitivity|0.908|0.875|0.868|0.853|0.868|0.885|
+| Specificity|0.953|0.939|0.934|0.925|0.934|0.942|
+| Precision |0.906|0.880|0.867|0.856|0.872|0.886|
+| F1 | 0.906|0.880|0.867|0.856|0.872|0.886|
